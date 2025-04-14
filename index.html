@@ -12,37 +12,41 @@
         </div>
 
         <div class="calculator">
-
             <div class="barra">
-                <input type="text">
+                <input type="text" class="display" value="0" disabled>
             </div>
-
+        
             <div class="linha1">
-                <button onclick="inserir('1')" class="um">1</button>
-                <button class="dois">2</button>
-                <button class="tres">3</button>
-                <button class="sinal-mais">+</button>
+                <button class="numero um" onclick="inserir('1')">1</button>
+                <button class="numero dois" onclick="inserir('2')">2</button>
+                <button class="numero tres" onclick="inserir('3')">3</button>
+                <button class="operador sinal-mais" onclick="inserir('+')">+</button>
             </div>
-
+        
             <div class="linha2">
-                <button class="quatro">4</button>
-                <button class="cinco">5</button>
-                <button class="seis">6</button>
-                <button class="sinal-menos">-</button>
+                <button class="numero quatro" onclick="inserir('4')">4</button>
+                <button class="numero cinco" onclick="inserir('5')">5</button>
+                <button class="numero seis" onclick="inserir('6')">6</button>
+                <button class="operador sinal-menos" onclick="inserir('-')">-</button>
             </div>
-
+        
             <div class="linha3">
-                <button class="sete">7</button>
-                <button class="oito">8</button>
-                <button class="nove">9</button>
-                <button class="sinal-multiplicacao">x</button>
+                <button class="numero sete" onclick="inserir('7')">7</button>
+                <button class="numero oito" onclick="inserir('8')">8</button>
+                <button class="numero nove" onclick="inserir('9')">9</button>
+                <button class="operador sinal-multiplicacao" onclick="inserir('*')">x</button>
             </div>
-
+        
             <div class="linha4">
-                <button class="virgula">,</button>
-                <button class="zero">0</button>
-                <button class="igual">=</button>
-                <button class="dividir">/</button>
+                <button class="decimal virgula" onclick="inserir('.')">,</button>
+                <button class="numero zero" onclick="inserir('0')">0</button>
+                <button class="operador igual" onclick="calcular()">=</button>
+                <button class="operador dividir" onclick="inserir('/')">/</button>
+            </div>
+        
+            <div class="linha-funcoes">
+                <button class="funcao limpar" onclick="limparDisplay()">C</button>
+                <button class="funcao apagar" onclick="apagarUltimo()">DEL</button>
             </div>
         </div>
 
