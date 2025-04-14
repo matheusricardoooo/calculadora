@@ -3,17 +3,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div id="conteiner">
+    <div id="container">
         <div class="name">
             <h1>Matheus Ricardo</h1>
         </div>
 
         <div class="calculator">
 
+            <div class="barra">
+                <input type="text">
+            </div>
+
             <div class="linha1">
-                <button class="um">1</button>
+                <button onclick="inserir('1')" class="um">1</button>
                 <button class="dois">2</button>
                 <button class="tres">3</button>
                 <button class="sinal-mais">+</button>
@@ -39,10 +44,10 @@
                 <button class="igual">=</button>
                 <button class="dividir">/</button>
             </div>
+        </div>
 
-            <div class="final">
-                <h1>"A matemática pura é, à sua maneira, a poesia das ideias lógicas." <br>(Albert Einsten)</h1>
-            </div>
+        <div class="final">
+            <h1>"A matemática pura é, à sua maneira, a poesia das ideias lógicas." <br>(Albert Einsten)</h1>
         </div>
     </div>
 </body>
