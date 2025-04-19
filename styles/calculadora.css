@@ -8,7 +8,7 @@
 
 .calculator {
     width: 300px;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,13 @@
     margin-left: 40%;
     background-color: #000124;
     border-radius: 20px;
-    box-shadow: 10px 10px #ffffff;
+    box-shadow: 10px 10px 90px #ffffff;
+}
+
+.tecla {
+    display: flex;
+    flex-direction: column;
+    padding-left: 52%;
 }
 
 .final {
@@ -27,4 +33,160 @@
     margin-top: 7%;
     font-family: "Dancing Script";
     color: #ffffff;
+}
+
+.barra {
+    margin-top: -40px;
+}
+
+.barra input {
+    width: 250px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.linha1 {
+    width: 300px;
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.linha2 {
+    width: 300px;
+    display: flex;
+    gap: 10px;
+}
+
+.linha3 {
+    width: 300px;
+    display: flex;
+    gap: 10px;
+}
+
+.linha4 {
+    width: 300px;
+    display: flex;
+    gap: 10px;
+}
+
+.linha-funcoes {
+    width: 300px;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-c {
+    background-color: #f44336;
+}
+
+.btn-del {
+    background-color: #f44336;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .name {
+        margin-top: 10%;
+        margin-left: 5%;
+        font-size: 2rem;
+    }
+
+    .calculator {
+        width: 600px;
+        height: 650px;
+        margin: 0;
+        margin-top: 20%;
+        margin-left: 23%;
+    }
+
+    .barra input {
+        margin-top: 10%;
+        width: 500px;
+        height: 70px;
+        font-size: 2rem;
+    }
+
+    .tecla {
+        padding: 0;
+        width: 200px;
+        padding-top: 12%;
+        padding-left: 4%;
+        gap: 20px;
+        transform: scale(1.6);
+    }
+
+    .final {
+        margin-top: 15%;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    .calculator {
+        width: 500px;
+        margin: 0;
+        margin-top: 12%;
+        margin-left: 20%;
+    }
+
+    .barra input {
+        width: 400px;
+        height: 70px;
+    }
+
+    .tecla {
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+    .calculator {
+
+        width: 500px;
+    }
+
+    .barra input {
+        width: 400px;
+    }
+
+    .tecla {
+        padding: 0;
+        padding-top: 70px;
+        padding-left: 27px;
+    }
+
+    .final {
+        padding-bottom: 20px;
+    }
+
+    .linha1 {
+        width: 100px;
+    }
 }

@@ -16,37 +16,39 @@
                 <input type="text" class="display" value="0" disabled>
             </div>
         
-            <div class="linha1">
-                <button class="numero um" onclick="inserir('1')">1</button>
-                <button class="numero dois" onclick="inserir('2')">2</button>
-                <button class="numero tres" onclick="inserir('3')">3</button>
-                <button class="operador sinal-mais" onclick="inserir('+')">+</button>
-            </div>
-        
-            <div class="linha2">
-                <button class="numero quatro" onclick="inserir('4')">4</button>
-                <button class="numero cinco" onclick="inserir('5')">5</button>
-                <button class="numero seis" onclick="inserir('6')">6</button>
-                <button class="operador sinal-menos" onclick="inserir('-')">-</button>
-            </div>
-        
-            <div class="linha3">
-                <button class="numero sete" onclick="inserir('7')">7</button>
-                <button class="numero oito" onclick="inserir('8')">8</button>
-                <button class="numero nove" onclick="inserir('9')">9</button>
-                <button class="operador sinal-multiplicacao" onclick="inserir('*')">x</button>
-            </div>
-        
-            <div class="linha4">
-                <button class="decimal virgula" onclick="inserir('.')">,</button>
-                <button class="numero zero" onclick="inserir('0')">0</button>
-                <button class="operador igual" onclick="calcular()">=</button>
-                <button class="operador dividir" onclick="inserir('/')">/</button>
-            </div>
-        
-            <div class="linha-funcoes">
-                <button class="funcao limpar" onclick="limparDisplay()">C</button>
-                <button class="funcao apagar" onclick="apagarUltimo()">DEL</button>
+            <div class="tecla">
+                <div class="linha1">
+                    <button class="btn" onclick="inserir('1')">1</button>
+                    <button class="btn" onclick="inserir('2')">2</button>
+                    <button class="btn" onclick="inserir('3')">3</button>
+                    <button class="btn" onclick="inserir('+')">+</button>
+                </div>
+            
+                <div class="linha2">
+                    <button class="btn" onclick="inserir('4')">4</button>
+                    <button class="btn" onclick="inserir('5')">5</button>
+                    <button class="btn" onclick="inserir('6')">6</button>
+                    <button class="btn" onclick="inserir('-')">-</button>
+                </div>
+            
+                <div class="linha3">
+                    <button class="btn" onclick="inserir('7')">7</button>
+                    <button class="btn" onclick="inserir('8')">8</button>
+                    <button class="btn" onclick="inserir('9')">9</button>
+                    <button class="btn" onclick="inserir('*')">x</button>
+                </div>
+            
+                <div class="linha4">
+                    <button class="btn" onclick="inserir('.')">,</button>
+                    <button class="btn" onclick="inserir('0')">0</button>
+                    <button class="btn" onclick="calcular()">=</button>
+                    <button class="btn" onclick="inserir('/')">/</button>
+                </div>
+            
+                <div class="linha-funcoes">
+                    <button class="btn-c" onclick="limparDisplay()">C</button>
+                    <button class="btn-del" onclick="apagarUltimo()">DEL</button>
+                </div>
             </div>
         </div>
 
